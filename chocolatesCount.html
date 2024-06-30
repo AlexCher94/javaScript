@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userSum = parseInt(prompt("сколько у вас денег?"));
+        let chocoPrice = parseInt(prompt("сколько стоит шоколадка?"));
+
+        let chocoCount = parseInt(userSum / chocoPrice);
+        let change = userSum % chocoCount;
+
+        if (chocoCount > 0) {
+            alert("вы сможете купить шоколадок: " + chocoCount);
+            alert("сдача: " + change);
+        } else {
+            alert("недостаточно денег");
+        } 
+    </script>
+</body>
+
+</html>
