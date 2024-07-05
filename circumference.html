@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let circumference = parseInt(prompt("введите длину окружности:"));
+        let perimeter = parseInt(prompt("введите периметр квадрата:"));
+
+        let circleArea = Math.pow(circumference, 2) / (4 * Math.PI);
+        let  sideLength = perimeter / 4;
+        let squareArea = sideLength * sideLength;
+
+        if (circleArea <= squareArea) {
+            alert("круг поместится в квадрат");
+        } else {
+            alert("круг не поместится");
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = parseInt(prompt("введите день:"));
+        let month = parseInt(prompt("введите месяц:"));
+        let year = parseInt(prompt("введите год:"));
+
+        let daysCountInMonth;
+
+        if (month === 1 || month === 3 || month === 5 || month ===7 || month === 8 || month === 10 || month === 12) {
+            daysCountInMonth = 31;
+        } else if (month === 2) {
+            if ((year % 4 === 0 && year % 100 != 0) || (year % 400 === 0)) {
+                daysCountInMonth = 29;
+            } else {
+                daysCountInMonth = 28;
+            }
+        } else {
+            daysCountInMonth = 30;
+        }
+
+        const monthsCount = 12;
+
+        if (day < 1 || day > daysCountInMonth || month < 1 || month > monthsCount) {
+            alert("Некорректная дата");
+        } else {
+            let nextDay = day + 1;
+            let nextMonth = month;
+            let nextYear = year;
+
+            if (nextDay > daysCountInMonth) {
+                nextDay = 1;
+                nextMonth = month + 1;
+
+                if (nextMonth > monthsCount) {
+                    nextMonth = 1;
+                    nextYear = year + 1;
+                }
+            }
+
+            alert("Следующая дата: " + nextDay + "." + nextMonth + "." + nextYear);
+        }
+    </script>
+</body>
+</html>
