@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt("введите 3х значное число");
+
+        if (number < 100 || number > 999) {
+            alert("введите 3х значное число")
+        } else {
+            let didgit1 = number % 10;
+            number = Math.floor(number / 10);
+            let didgit2 = number % 10
+            number = Math.floor(number / 10);
+            let didgit3 = number % 10;
+
+            if (didgit1 === didgit2 || didgit1 === didgit3 || didgit2 === didgit3) {
+                alert("в числе есть одинаковые цифры");
+            } else {
+                alert("в числе нет одинаковых цифр");
+
+            }
+        }
+    </script>
+</body>
+
+</html>

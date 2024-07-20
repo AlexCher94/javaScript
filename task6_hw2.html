@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let usd = prompt("введите сумму")
+        let currency = prompt("в какую валюту перевести EUR / UAH / AZM");
+
+        let eur = 0.9;
+        let uah = 41.5;
+        let azm = 1.7;
+        let convert;
+
+        if (currency === "EUR") {
+            convert = Math.round((usd / eur) * 10) / 10;
+            alert(`вы получите ${convert} евро`);
+        } else if (currency === "UAH") {ss
+            convret = Math.round((usd / uah) * 10) / 10;
+            alert(`вы получите ${convert} гривен`);
+        } else if (currency === "AZM") {
+            convret = Math.round((usd / uah) * 10) / 10;
+            alert(`вы получите ${convert} магнатов`);
+        }
+    </script>
+</body>
+
+</html>
