@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userInput = prompt("укажите объем флешки в ГБ");
+        const gb = 1024;
+        const file = 820;
+
+        let fleshSize = userInput * gb;
+        let filesCount = Math.round(fleshSize / file);
+
+        alert(`поместится файлов: ${filesCount}`);
+    </script>
+</body>
+</html>

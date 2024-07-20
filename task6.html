@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = prompt("введите сумму");
+        
+        const dollar = 90;
+        const euro = 93;
+        
+        let convrt = Math.round(((sum * dollar) / euro) * 10) / 10;
+        
+        alert(`вы получите ${convrt} евро`);
+    </script>
+</body>
+</html>
